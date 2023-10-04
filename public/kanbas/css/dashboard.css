@@ -1,0 +1,25 @@
+.dashboard {
+    margin-left: 30px;
+    width: 83%;
+    max-width: 1400px;
+}
+
+.dashboard-card {
+    margin-top: 35px;
+    width: 260px;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+.course-description {
+    text-decoration: none;
+    color: black;
+}
+
+.course-description:hover {
+    text-decoration: underline;
+}
+
+.course-description b {
+    color: blue;
+}

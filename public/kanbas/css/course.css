@@ -1,0 +1,22 @@
+.list-group-item a {
+    color: red;
+    text-decoration: none;
+}
+
+.assignments-section {
+
+    border-left: green;
+    border-left-width: 4px;
+    border-style: solid;
+
+}
+
+.assignments-section a {
+    text-decoration: none;
+    color: black;
+}
+
+.edit-assignment {
+    width: 800px;
+
+}

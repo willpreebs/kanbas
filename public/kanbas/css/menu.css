@@ -1,0 +1,29 @@
+.menu {
+    width: 190px;
+    margin-left: 20px;  
+    font-size: 1em;
+}
+
+.menu li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 8px;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+}
+
+.selected {
+    border-left: 2px solid black;
+    
+}
+
+.selected a {
+    color: black;
+}
+
+.nonselected a {
+    color: red;
+}

@@ -1,0 +1,42 @@
+
+.page-col {
+    float: left;
+    padding-top: 20px;
+    min-height: 800px;
+}
+
+.kanbas-navigator {
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 85px;
+    font-size: 1em;
+    align-items: center;
+  }
+
+  .kanbas-navigator li {
+    list-style-type: none;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .active-link {
+    background-color: white;
+    color: red;
+  }
+
+  .active-link a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .inactive-link {
+    background-color: black;
+    color: white;
+  }
+
+  .inactive-link a {
+    text-decoration: none;
+    display: b;
+  }

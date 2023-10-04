@@ -1,0 +1,180 @@
+<head>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../vendors/fontawesome-6/css/all.css" rel="stylesheet">
+    <link href="../css/navigation.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+    <link href="../css/course.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="kanbas-navigator page-col">
+        <li class="kanbas-navigator"><a class="inactive-link" href="#">
+        <i class="fa fa-n fa-4x" style="color: red"></i></a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="../profile/index.html">
+        <i class="fa fa-regular fa-user fa-2x sidebar-icon" style="color: white"></i>Account</a></li>
+
+        <li class="kanbas-navigator active-link"><a class="active-link" href="../dashboard.html">
+        <i class="fa fa-gauge-high fa-2x" style="color: red"></i>Dashboard</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="../courses/index.html">
+        <i class="fa fa-book fa-2x" style="color: red"></i>Courses</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+        <i class="fa fa-calendar fa-2x" style="color: red"></i>Calendar</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+        <i class="fa fa-inbox fa-2x" style="color: red"></i><br>Inbox</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+        <i class="fa fa-clock fa-2x" style="color: red"></i>History</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+        <i class="fa fa-globe fa-2x" style="color: red"></i><br>Studio</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+        <i class="fa fa-circle-arrow-right fa-2x" style="color: red"></i>Commens</a></li>
+
+        <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+        <i class="fa fa-question fa-2x" style="color: red"></i><br>Help</a></li>
+
+    </div>
+
+    <div class="d-flex p-2">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a style="color: red; text-decoration: none;" href="#">Course 1</a></li>
+              <li class="breadcrumb-item" aria-current="page">Assignments</li>
+              <li class="breadcrumb-item active" aria-current="page">A1 HTML+ENV</li>
+            </ol>
+          </nav>
+    </div>
+
+    <div class="page-col menu">
+        <li class="nonselected"><a href="./index.html">Home</a></li>
+        <li class="nonselected"><a href="#">Modules</a></li>
+        <li class="nonselected"><a href="#">Piazza</a></li>
+        <li class="nonselected"><a href="#">Zoom Meetings</a></li>
+        <li class="selected"><a href="./assignment.html">Assignments</a></li>
+        <li class="nonselected"><a href="#">Quizzes</a></li>
+        <li class="nonselected"><a href="./grades.html">Grades</a></li>
+        <li class="nonselected"><a href="#">People</a></li>
+        <li class="nonselected"><a href="#">Panopto Video</a></li>
+        <li class="nonselected"><a href="#">Progress Reports EAB Navigate</a></li>
+    </div>
+
+    <div class="page-col">
+        <div class="edit-assignment">
+            <label class="form-label" for="assignment-name">Assignment Name</label>
+            <input class="form-control mt-1" id="assignment-name" value="A1-ENV+HTML">
+            <textarea class="form-control mt-2">This assignment describes how to install the development environment</textarea>
+
+            <div class="row g-3 align-items-center mt-2">
+                <div class="col">
+                  <label for="inputPoints" class="col-form-label">Points</label>
+                </div>
+                <div class="col">
+                  <input type="number" id="inputPoints" class="form-control" aria-describedby="passwordHelpInline" value="100">
+                </div>
+            </div>
+            <div class="row g-3 align-items-center mt-2">
+                <div class="col align-items-right">
+                  <label for="assignment-group" class="col-form-label">Assignment Group</label>
+                </div>
+                <div class="col align-items-left">
+                  <select class="form-select" id="assignment-group">
+                    <option>ASSIGNMENTS</option>
+                  </select>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center mt-2">
+                <div class="col">
+                  <label for="displayGrade" class="col-form-label">Display Grade as</label>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="displayGrade">
+                        <option>Percentage</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row g-3 align-items-center mt-2">
+                <div class="col">
+                </div>
+                <div class="col-auto">
+                    <input type="checkbox" id="final-grade">
+                    <label for="final-grade">Do not count this assignment towards the final grade</label>
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col">
+                    <label class="col-form-label">Submission Type</label>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <select class="form-select mb-2">
+                            <option>Online</option>
+                        </select>
+                        <b>Online Entry Options</b><br>
+                        <input class="mt-3" type="checkbox" id="text-entry">
+                        <label for="text-entry">Text Entry</label>
+                        <br>
+                        <input class="mt-3" type="checkbox" id="url">
+                        <label for="url">Website URL</label>
+                        <br>
+                        <input class="mt-3" type="checkbox" id="media">
+                        <label for="media">Media Recordings</label>
+                        <br>
+                        <input class="mt-3" type="checkbox" id="annos">
+                        <label for="annos">Student Annotations</label>
+                        <br>
+                        <input class="mt-3" type="checkbox" id="uploads">
+                        <label for="uploads">File Uploads</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col">
+                    <label class="col-form-label">Assign</label>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <label for="assign"><b>Assign To</b></label>
+                        <input id="assign" class="form-control" value="Everyone">
+                        <label for="due"><b>Due</b></label>
+                        <input type="text" class="form-control" id="due" value="09/18/2023">
+                        <div class="row mt-2">
+                            <div class="col">
+                                <label for="available"><b>Available from</b></label>
+                            </div>
+                            <div class="col">
+                                <label for="until"><b>Until</b></label>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <input class="form-control" id="available" type="text" value="09/06/23">
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <button class="btn btn-secondary mt-2" style="width: 100%">+ Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mt-2">
+                <div class="col">
+                    <input class="mt-3" type="checkbox" id="notify">
+                    <label for="notify">Notify users that this content has changed</label>
+                </div>
+                <div class="col">
+                    <div class="d-flex">
+                        <a href="./assignment.html"><button class="btn btn-secondary">Cancel</button></a>
+                        <a href="./assignment.html"><button class="btn btn-danger">Save</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>

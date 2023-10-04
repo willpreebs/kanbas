@@ -1,0 +1,26 @@
+
+.profile {
+    margin-left: 30px;
+}
+
+.right-side {
+    float: right;
+}
+
+.profile h2 {
+    padding-top: 20px;
+}
+
+.profile h3 {
+    padding-top: 20px;
+}
+
+.profile a {
+    text-decoration: none;
+    color: red;
+
+}
+
+.profile p {
+    word-wrap: normal;
+}

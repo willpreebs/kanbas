@@ -1,82 +1,107 @@
-<table border="1">
-    <tbody>
-      <tr>
-        <td valign="top">
-          <ul>
-            <li><a href="#">Northeastern</a></li>
-            <li><a href="./index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../index.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
-        <td valign="top">
-          <ul>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="./index.html">Profile</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">ePortfolios</a></li>
-            <li><a href="#">Shared Content</a></li>
-            <li><a href="#">The Hub</a></li>
-            <li><a href="#">Qwickly Course Tools</a></li>
-            <li><a href="#">Global Announcements</a></li>
-          </ul>
-        </td>
-        <td valign="top">
-            <h1>Will Priebe</h1>
-            <label for="name">Name:*</label>
-            <input id="name" type="text" value="Will Priebe">
-            <label for="pronouns">Pronouns:</label>
-            <select id="pronouns">
-                <option>None</option>
-                <option>He/Him</option>
-                <option>She/Her</option>
-                <option>They/Them</option>
-            </select> <br>
-            <label for="title">Title:</label>
-            <input id="title">
-            <h2>Contact</h2>
-            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            <h2>Biography</h2>
-            <p>Student, Computer Science major, sailing team member.</p> <br>
-            <textarea>Student, Computer Science major, sailing team member</textarea> <br>
-            <h2>Links</h2>
-            <ul>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a></li>
-            </ul>
-            <table>
-              <tbody>
-                <tr>
-                  <td style="text-align: center">
-                    <b>Title</b>
-                  </td>
-                  <td style="text-align: center">
-                    <b>URL</b>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input id="link-title" value="YouTube"> →
-                  </td>
-                  <td>
-                    <input id="link-url" value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                    <a href="#">Remove</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <button>Add another link</button> <br>
-            <a href="./index.html"><button>Cancel</button></a>
-            <a href="./index.html"><button>Profile</button></a><br>
-            <button>Edit Profile</button>
-            <a href="./index.html"><button>Cancel Editing</button></a>
-        </td>
-      </tr>
-    </tbody>
-</table>
+<head>
+  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../vendors/fontawesome-6/css/all.css" rel="stylesheet">
+  <link href="../css/navigation.css" rel="stylesheet">
+  <link href="../css/menu.css" rel="stylesheet">
+  <link href="../css/profile.css" rel="stylesheet">
+</head>
+<body>
+  <div class="kanbas-navigator page-col">
+    <li class="kanbas-navigator"><a class="inactive-link" href="#">
+      <i class="fa fa-n fa-4x" style="color: red"></i></a></li>
+
+    <li class="kanbas-navigator active-link"><a class="active-link" href="./index.html">
+      <i class="fa fa-regular fa-user fa-2x sidebar-icon" style="color: black"></i>Account</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="../dashboard.html">
+      <i class="fa fa-gauge-high fa-2x" style="color: red"></i>Dashboard</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="../courses/index.html">
+      <i class="fa fa-book fa-2x" style="color: red"></i>Courses</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+      <i class="fa fa-calendar fa-2x" style="color: red"></i>Calendar</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+      <i class="fa fa-inbox fa-2x" style="color: red"></i><br>Inbox</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+      <i class="fa fa-clock fa-2x" style="color: red"></i>History</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+      <i class="fa fa-globe fa-2x" style="color: red"></i><br>Studio</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+      <i class="fa fa-circle-arrow-right fa-2x" style="color: red"></i>Commens</a></li>
+
+    <li class="kanbas-navigator inactive-link"><a class="inactive-link" href="#">
+      <i class="fa fa-question fa-2x" style="color: red"></i><br>Help</a></li>
+
+  </div>
+  <div class="menu page-col">
+    <li class="nonselected"><a href="#">Notifications</a></li>
+    <li class="selected"><a href="#">Profile</a></li>
+    <li class="nonselected"><a href="#">Files</a></li>
+    <li class="nonselected"><a href="#">Settings</a></li>
+    <li class="nonselected"><a href="#">ePortfolios</a></li>
+    <li class="nonselected"><a href="#">SharedContent</a></li>
+    <li class="nonselected"><a href="#">The Hub</a></li>
+    <li class="nonselected"><a href="#">Qwickly Course Tools</a></li>
+    <li class="nonselected"><a href="#">Global Announcements</a></li>
+  </div>
+
+  <div class="profile page-col">
+    <h2>Will Priebe</h2>
+    <label for="name">Name:*</label>
+    <input class="form-control" id="name" type="text" value="Will Priebe">
+    <label for="pronouns">Pronouns:</label>
+    <select class="form-select" id="pronouns">
+        <option>None</option>
+        <option>He/Him</option>
+        <option>She/Her</option>
+        <option>They/Them</option>
+    </select> <br>
+    <label for="title">Title:</label>
+    <input class="form-control" type="text" id="title">
+    <h3>Contact</h3>
+    <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+    <h3>Biography</h3>
+    <textarea class="form-control">Student, Computer Science major, sailing team member</textarea> <br>
+    <h3>Links</h3>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <label for="title"><b>Title</b></label>
+        </div>
+        <div class="col">
+          <label for="url"><b>URL</b></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input class="form-control" id="title" type="text" value="YouTube">
+        </div>
+        <div class="col">
+          <input class="form-control" id="url" type="text" value="https://www.youtube.com/@WebDevTV">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button>Add another link</button>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 10px; margin-left: 20px">
+      <a class="btn btn-light" href="./index.html" style="color: gray">Cancel</a>
+      <a class="btn btn-danger" href="./index.html" style="color: white">Save Editing</a>  
+    </div>
+   
+  </div>
+
+  <div class="float-end">
+    <a href="./index.html"><button class="btn-primary"><i class="fa fa-pencil"></i>Cancel Editing</button></a>
+  </div>
+
+</body>
