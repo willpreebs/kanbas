@@ -39,9 +39,7 @@ function Courses() {
       <h1>{course.name}</h1>
       <hr/>
       <div className="row">
-        <div className="col">
-          <CourseNavigation />
-        </div>
+        <CourseNavigation />
         <div className="col">
           <Routes>
             <Route path="Home" element={<Home/>} />

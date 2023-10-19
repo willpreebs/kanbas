@@ -17,6 +17,20 @@ function KanbasNavigation() {
     }
   }
 
+  const getIconColor = (link) => {
+    if (link === "Account") {
+      if (getLinkClassName(link) === "active-link") {
+        return 'black'
+      }
+      else {
+        return 'white';
+      }
+    }
+    else {
+      return 'red';
+    }
+  }
+
   return (
     <div className="kanbas-navigator page-col"/* style={{ width: 150 }}*/>
       {links.map((link, index) => (
@@ -25,7 +39,7 @@ function KanbasNavigation() {
             key={index}
             to={`/Kanbas/${link}`}
             className={`${getLinkClassName(link)}`}>
-            <i className={`fa ${icons[index]} fa-2x`}></i>
+            <i className={`fa ${icons[index]} fa-2x`} style={{color: `${getIconColor(link)}`}}></i>
             {link}
           </Link>
         </li>
