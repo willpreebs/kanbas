@@ -6,6 +6,7 @@ import Modules from "../Modules";
 import Home from "../Home";
 import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
+import Grades from "./Grades";
 import "../css/navigation.css"
 import "../css/course.css";
 import "../css/menu.css";
@@ -38,7 +39,7 @@ function Courses() {
             </ol>
         </nav>
       </div>
-      <h1>{course.name}</h1>
+      <h1 className="ps-3">{course.name}</h1>
       <hr/>
       <div className="row">
         <CourseNavigation />
@@ -51,7 +52,7 @@ function Courses() {
               path="Assignments/:assignmentId"
               element={<AssignmentEditor />}
             />
-            <Route path="Grades" element={<h1>Grades</h1>} />
+            <Route path="Grades" element={<Grades/>} />
           </Routes>
         </div>
       </div>
