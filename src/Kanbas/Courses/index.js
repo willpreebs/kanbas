@@ -29,9 +29,11 @@ function Courses() {
   return (
     <div>
       <div className="d-flex p-2">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" className="breadcrumbDivider">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item">{course.name}</li>
+              <li class="breadcrumb-item">
+                <a href='#'>{course.name}</a> 
+              </li>
               <li class="breadcrumb-item active" aria-current="page">{getLinkName()}</li>
             </ol>
         </nav>

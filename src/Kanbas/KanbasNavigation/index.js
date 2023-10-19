@@ -33,6 +33,12 @@ function KanbasNavigation() {
 
   return (
     <div className="kanbas-navigator page-col"/* style={{ width: 150 }}*/>
+      <li className="kanbas-navigator inactive-link">
+      <Link to="/Kanbas"
+            className="inactive-link">
+            <i className="fa fa-n fa-4x" style={{color: 'red'}}></i>
+      </Link>
+      </li>
       {links.map((link, index) => (
         <li className={`kanbas-navigator ${getLinkClassName(link)}`}>
           <Link

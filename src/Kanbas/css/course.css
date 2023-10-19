@@ -3,6 +3,15 @@
     text-decoration: none;
 }
 
+.breadcrumbDivider {
+    --bs-breadcrumb-divider: '>';
+}
+
+.breadcrumb-item a {
+    color: red;
+    text-decoration: none;
+}
+
 .assignments-section {
 
     border-left: green;
