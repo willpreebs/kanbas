@@ -12,7 +12,7 @@ function Dashboard() {
       <div class="d-flex flex-wrap flex-row">
       {courses.map((course, index) => (
         <div class="card dashboard-card">
-          <img class="card-img-top" src="https://img.freepik.com/free-vector/blank-book-white-background_1308-23052.jpg?w=996&t=st=1696294744~exp=1696295344~hmac=54d154afeef62ed9817c997bc56c6afb019aa8fabf237c3468ecd6aad3c77007"/>
+          <img class="card-img-top" src="https://img.freepik.com/free-vector/blank-book-white-background_1308-23052.jpg?w=996&t=st=1696294744~exp=1696295344~hmac=54d154afeef62ed9817c997bc56c6afb019aa8fabf237c3468ecd6aad3c77007" alt=""/>
           <div class="card-body">
             <Link
               key={index}
@@ -25,9 +25,6 @@ function Dashboard() {
         </div>
       ))}
       </div>
-      {/* <pre>
-        <code>{JSON.stringify(courses, null, 2)}</code>
-      </pre> */}
     </div>
   );
 }
