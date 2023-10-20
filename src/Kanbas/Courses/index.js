@@ -33,7 +33,7 @@ function Courses() {
         <nav aria-label="breadcrumb" className="breadcrumbDivider">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href='#'>{course.name}</a> 
+                <a href="#">{course.name}</a> 
               </li>
               <li class="breadcrumb-item active" aria-current="page">{getLinkName()}</li>
             </ol>
