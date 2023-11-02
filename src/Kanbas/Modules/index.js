@@ -3,9 +3,10 @@ import ModuleList from "./ModuleList";
 function Modules() {
   return (
     <div>
-      <h2>Modules</h2>
+      <h1>Modules</h1>
       <ModuleList />
     </div>
   );
 }
+
 export default Modules;

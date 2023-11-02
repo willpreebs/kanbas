@@ -3,7 +3,6 @@ import StatusInfo from "./statusInfo";
 import AboveModuleBar from "../Modules/aboveModuleBar";
 
 import '../css/navigation.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
   return (
@@ -22,7 +21,6 @@ function Home() {
         </div>
       </div>
     </div>
-    
   );
 }
 

@@ -3,8 +3,6 @@ import "../css/navigation.css"
 import "../css/course.css";
 import "../css/menu.css";
 
-
-
 function CourseNavigation() {
   const links = ["Home", "Modules", "Assignments", "Grades"];
   const { courseId } = useParams();
