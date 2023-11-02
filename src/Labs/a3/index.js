@@ -1,7 +1,7 @@
 import JavaScript from "./JavaScript";
 import PathParameters from "./PathParameters";
-import TodoItem from "./todos/TodoItem";
-import TodoList from "./todos/TodoList";
+import TodoItem from "./Todos/TodoItem";
+import TodoList from "./Todos/TodoList";
 
 function Assignment3() {
   return (
