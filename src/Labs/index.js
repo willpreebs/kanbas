@@ -1,4 +1,5 @@
 import Assignment4 from "./a4";
+import Assignment5 from "./a5";
 import store from "./store";
 import { Provider } from "react-redux";
 
@@ -8,7 +9,8 @@ function Labs() {
   <Provider store={store}>
     <div>
      <Nav/>
-     <Assignment4/>
+     {/* <Assignment4/> */}
+     <Assignment5/>
    </div>
   </Provider>
  );
