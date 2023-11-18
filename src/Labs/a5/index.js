@@ -4,7 +4,7 @@ import WorkingWithObjects from './WorkingWithObjects.js';
 
 function Assignment5() {
 
-  const HOST = process.env.BASE || "http://localhost:4000";
+  const HOST = process.env.SERVER_BASE || "http://localhost:4000";
   const WELCOME = `${HOST}/hello`;
 
   return (

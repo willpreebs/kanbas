@@ -3,10 +3,10 @@ import axios from "axios";
 
 function EncodingParametersInURLs() {
 
-  const HOST = process.env.BASE || "http://localhost:4000";
+  const HOST = process.env.SERVER_BASE || "http://localhost:4000";
 
   const getURL = (path) => {
-    console.log(process.env.BASE);
+    console.log(process.env.SERVER_BASE);
     console.log(process.env.REACT_APP_API_BASE);
     return `${HOST}/${path}`;
   };

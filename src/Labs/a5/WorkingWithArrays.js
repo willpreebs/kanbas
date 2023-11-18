@@ -3,7 +3,7 @@ import axios from "axios";
 
 function WorkingWithArrays() {
     
-    const HOST = process.env.BASE || "http://localhost:4000";
+    const HOST = process.env.SERVER_BASE || "http://localhost:4000";
 
     const API = `${HOST}/a5/todos`;
     const [todos, setTodos] = useState([]);
