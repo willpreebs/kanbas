@@ -16,8 +16,8 @@ import "../css/menu.css";
 function Courses() {
   const { courseId } = useParams();
   console.log("courseID: " + courseId);
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000/api";
-  const COURSE_URL =`${API_BASE}/courses`;
+  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000";
+  const COURSE_URL =`${API_BASE}/api/courses`;
   const [course, setCourse] = useState({
     name: "New Course",
   });

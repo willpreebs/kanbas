@@ -11,7 +11,7 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
     });
-    const URL_BASE = process.env.SERVER_BASE || "http://localhost:4000";
+    const URL_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000";
     const URL = `${URL_BASE}/a5/assignment`;
     
     const fetchAssignment = async () => {
