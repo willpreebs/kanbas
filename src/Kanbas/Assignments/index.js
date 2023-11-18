@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import db from "../Database";
+import db from "../Database-old";
 import "./index.css";
 
 function Assignments() {
