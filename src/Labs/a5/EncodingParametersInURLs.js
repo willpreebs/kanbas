@@ -7,6 +7,7 @@ function EncodingParametersInURLs() {
 
   const getURL = (path) => {
     console.log(process.env.BASE);
+    console.log(process.env.REACT_APP_API_BASE);
     return `${HOST}/${path}`;
   };
 
