@@ -24,20 +24,20 @@ function Dashboard ({
         <button onClick={addCourse} className="btn btn-success me-2">
           Add
         </button>
-        <button onClick={updateCourse} className="btn btn-warning" >
+        <button onClick={() => updateCourse(course)} className="btn btn-warning" >
           Update
         </button>
       </div>
       <hr/>
       <h2>Published Courses ({courses.length})</h2>
       <div class="d-flex flex-wrap flex-row">
-      {courses.map((course) => (
+      {courses.map((course, index) => (
         <div class="card dashboard-card">
           <img class="card-img-top" src="https://img.freepik.com/free-vector/blank-book-white-background_1308-23052.jpg?w=996&t=st=1696294744~exp=1696295344~hmac=54d154afeef62ed9817c997bc56c6afb019aa8fabf237c3468ecd6aad3c77007" alt=""/>
           <div class="card-body">
             <Link
-              key={course._id}
-              to={`/Kanbas/Courses/${course._id}`}
+              key={index}
+              to={`/Kanbas/Courses/${course.number}`}
               className="course-description">
             <b>{course.name}</b> <br/>
               {course.number} <br/>

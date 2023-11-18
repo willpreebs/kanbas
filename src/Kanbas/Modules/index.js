@@ -1,4 +1,4 @@
-import ModuleList from "./ModuleList";
+import ModuleList from "./moduleList";
 
 function Modules() {
   return (

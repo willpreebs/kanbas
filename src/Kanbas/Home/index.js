@@ -1,4 +1,4 @@
-import ModuleList from "../Modules/ModuleList";
+import ModuleList from "../Modules/moduleList";
 import StatusInfo from "./statusInfo";
 import AboveModuleBar from "../Modules/aboveModuleBar";
 

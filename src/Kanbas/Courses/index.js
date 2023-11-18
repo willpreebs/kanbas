@@ -1,4 +1,7 @@
 import { useParams } from "react-router";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 import CourseNavigation from "../CourseNavigation";
 import { Routes, Route, useLocation} from "react-router-dom";
 import Modules from "../Modules";
@@ -10,10 +13,25 @@ import "../css/navigation.css"
 import "../css/course.css";
 import "../css/menu.css";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  // const course = db.courses.find((course) => course._id === courseId);
-  const course = courses.find((course) => course._id === courseId);
+  console.log("courseID: " + courseId);
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({
+    name: "New Course",
+  });
+  const findCourseById = async (courseId) => {
+    console.log(`${URL}/${courseId}`);
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    console.log("useEffect: " + courseId.toString());
+    findCourseById(courseId);
+  }, [courseId]);
 
   const links = ["Home", "Modules", "Assignments", "Grades"];
   const { pathname } = useLocation();
