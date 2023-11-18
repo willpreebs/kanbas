@@ -6,6 +6,7 @@ function EncodingParametersInURLs() {
   const HOST = process.env.BASE || "http://localhost:4000";
 
   const getURL = (path) => {
+    console.log(process.env.BASE);
     return `${HOST}/${path}`;
   };
 
