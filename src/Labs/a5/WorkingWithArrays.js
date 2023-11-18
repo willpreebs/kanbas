@@ -3,7 +3,9 @@ import axios from "axios";
 
 function WorkingWithArrays() {
     
-    const API = "http://localhost:4000/a5/todos";
+    const HOST = process.env.BASE || "http://localhost:4000";
+
+    const API = `${HOST}/a5/todos`;
     const [todos, setTodos] = useState([]);
     const [todo, setTodo] = useState({ title: "New Todo", completed: false });
 
