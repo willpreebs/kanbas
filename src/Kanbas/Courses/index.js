@@ -1,6 +1,8 @@
 import { useParams } from "react-router";
-import { useState, useEffect } from "react";
+import { useState, useEffect, React } from "react";
 import axios from "axios";
+
+import { Link } from "react-router-dom";
 
 import CourseNavigation from "../CourseNavigation";
 import { Routes, Route, useLocation} from "react-router-dom";
@@ -50,7 +52,10 @@ function Courses() {
         <nav aria-label="breadcrumb" className="breadcrumbDivider">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">{course.name}</a> 
+                <Link 
+                  to={`/Kanbas/Courses/${course.number}`}
+                  >{course.name}</Link>
+                <a href=""></a> 
               </li>
               <li class="breadcrumb-item active" aria-current="page">{getLinkName()}</li>
             </ol>
