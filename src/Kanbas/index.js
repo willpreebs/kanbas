@@ -14,7 +14,8 @@ import Signup from "../users/signup";
 
 function Kanbas() {
 
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:4000";
+  // const API_BASE = process.env.REACT_APP_BASE_API_URL || "http://localhost:4000";
+  const API_BASE = "https://kanbas-node-server-app-wp-10c31b2a54ba.herokuapp.com";
   const COURSE_URL = `${API_BASE}/api/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(COURSE_URL);
