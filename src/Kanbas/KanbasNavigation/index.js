@@ -34,7 +34,7 @@ function KanbasNavigation() {
   return (
     <div className="kanbas-navigator page-col"/* style={{ width: 150 }}*/>
       <li className="kanbas-navigator inactive-link">
-      <Link to="/Kanbas"
+      <Link to="/Kanbas/Signin"
             className="inactive-link">
             <i className="fa fa-n fa-4x" style={{color: 'red'}}></i>
       </Link>

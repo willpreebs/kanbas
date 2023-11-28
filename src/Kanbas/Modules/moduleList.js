@@ -48,7 +48,10 @@ function ModuleList() {
     dispatch(updateModule(module));
   };
 
-  const modules = useSelector((state) => state.modulesReducer.modules);
+  const modules = useSelector((state) => {
+    console.log(state.modulesReducer.modules);
+ return state.modulesReducer.modules
+});
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
 
@@ -62,7 +65,7 @@ function ModuleList() {
               Add
             </button>
             <button className="btn btn-warning me-2"
-            onClick={() => dispatch(updateModule(module))}>
+            onClick={handleUpdateModule}>
               Update
             </button>
           </div>
