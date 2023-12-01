@@ -14,7 +14,7 @@ import Signup from "../users/signup";
 
 function Kanbas() {
 
-  const LOCAL = true;
+  const LOCAL = false;
 
   const API_BASE = LOCAL ? "http://localhost:4000" : "https://kanbas-node-server-app-wp-10c31b2a54ba.herokuapp.com";
   const COURSE_URL = `${API_BASE}/api/courses`;
