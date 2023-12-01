@@ -40,7 +40,7 @@ function KanbasNavigation() {
       </Link>
       </li>
       {links.map((link, index) => (
-        <li className={`kanbas-navigator ${getLinkClassName(link)}`}>
+        <li key={index} className={`kanbas-navigator ${getLinkClassName(link)}`}>
           <Link
             key={index}
             to={`/Kanbas/${link}`}

@@ -16,31 +16,47 @@ function Signup() {
     }
   };
   return (
-    <>
+    <div className="page-col page-left-margin">
         <div>
         <h1>Signup</h1>
         {error && <div>{error}</div>}
-        <input
-            value={credentials.username}
-            onChange={(e) => setCredentials({
-            ...credentials,
-            username: e.target.value })} />
-        <input
-            value={credentials.password}
-            onChange={(e) => setCredentials({
-            ...credentials,
-            password: e.target.value })} />
-        <button onClick={signup}>
-            Signup
-        </button>
+        <div className="row mt-3">
+          <div className="col">
+            <label for="username">Username</label>
+          </div>
+          <div className="col">
+            <input id="username" className="form-control"
+              value={credentials.username}
+              onChange={(e) => setCredentials({
+              ...credentials,
+              username: e.target.value })} />
+          </div>
         </div>
-        <div>
+        <div className="row mt-3">
+          <div className="col">
+            <label for="password">Password</label>
+          </div>
+          <div className="col">
+            <input id="password" className="form-control"
+              value={credentials.password}
+              onChange={(e) => setCredentials({
+              ...credentials,
+              password: e.target.value })} />
+          </div>
+        </div>
+        <div className="row mt-3">
+          <button className="btn btn-primary" onClick={signup}>
+              Signup
+          </button>
+        </div>
+        
+        </div>
+        <div className="mt-3">
             <Link to="/Kanbas/Signin" className="btn btn-success">
                     Go to Sign In
             </Link>
         </div>
-    </>
-    
+    </div>
   );
 }
 export default Signup;

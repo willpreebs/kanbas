@@ -3,6 +3,7 @@ import * as client from "./client";
 
 import { BsFillCheckCircleFill, BsPencil, BsPlusCircleFill, BsTrash3Fill }
   from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function UserTable() {
   const [users, setUsers] = useState([]);
@@ -34,9 +35,14 @@ function UserTable() {
     }
   };
 
-  const deleteUser = async () => {
-
-  }
+  const deleteUser = async (user) => {
+    try {
+      await client.deleteUser(user);
+      setUsers(users.filter((u) => u._id !== user._id));
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   const fetchUsers = async () => {
     const users = await client.findAllUsers();
@@ -45,7 +51,7 @@ function UserTable() {
   useEffect(() => { fetchUsers(); }, []);
 
   return (
-    <div>
+    <div className="page-col page-left-margin">
       <h1>User List</h1>
       <table className="table">
         <thead>
@@ -79,7 +85,9 @@ function UserTable() {
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
-              <td>{user.username}</td>
+              <Link to={`/Kanbas/Account/${user._id}`}>
+                <td>{user.username}</td>
+              </Link>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td className="text-nowrap">

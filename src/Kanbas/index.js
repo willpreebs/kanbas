@@ -14,8 +14,9 @@ import Signup from "../users/signup";
 
 function Kanbas() {
 
-  // const API_BASE = process.env.REACT_APP_BASE_API_URL || "http://localhost:4000";
-  const API_BASE = "https://kanbas-node-server-app-wp-10c31b2a54ba.herokuapp.com";
+  const LOCAL = true;
+
+  const API_BASE = LOCAL ? "http://localhost:4000" : "https://kanbas-node-server-app-wp-10c31b2a54ba.herokuapp.com";
   const COURSE_URL = `${API_BASE}/api/courses`;
   const findAllCourses = async () => {
     const response = await axios.get(COURSE_URL);
@@ -70,6 +71,7 @@ function Kanbas() {
             <Route path="Signin" element={<Signin/>}/>
             <Route path="Signup" element={<Signup/>}/>
             <Route path="Account"  element={<Account/>}/>
+            <Route path="Account/:id" element={<Account/>}/>
             <Route
               path="Dashboard"
               element={

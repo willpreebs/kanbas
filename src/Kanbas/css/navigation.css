@@ -5,6 +5,10 @@
     min-height: 800px;
 }
 
+.page-left-margin {
+  margin-left: 30px;
+}
+
 .kanbas-navigator {
     background-color: black;
     color: white;

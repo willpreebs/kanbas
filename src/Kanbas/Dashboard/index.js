@@ -9,7 +9,7 @@ function Dashboard ({
   deleteCourse, updateCourse
 }) {
   return (
-    <div class="page-col dashboard">
+    <div className="page-col dashboard">
       <h1>Dashboard</h1>
       <hr/>
       <div className="form-control">
@@ -30,11 +30,11 @@ function Dashboard ({
       </div>
       <hr/>
       <h2>Published Courses ({courses.length})</h2>
-      <div class="d-flex flex-wrap flex-row">
+      <div className="d-flex flex-wrap flex-row">
       {courses.map((course, index) => (
-        <div class="card dashboard-card">
-          <img class="card-img-top" src="https://img.freepik.com/free-vector/blank-book-white-background_1308-23052.jpg?w=996&t=st=1696294744~exp=1696295344~hmac=54d154afeef62ed9817c997bc56c6afb019aa8fabf237c3468ecd6aad3c77007" alt=""/>
-          <div class="card-body">
+        <div key={index} className="card dashboard-card">
+          <img className="card-img-top" src="https://img.freepik.com/free-vector/blank-book-white-background_1308-23052.jpg?w=996&t=st=1696294744~exp=1696295344~hmac=54d154afeef62ed9817c997bc56c6afb019aa8fabf237c3468ecd6aad3c77007" alt=""/>
+          <div className="card-body">
             <Link
               key={index}
               to={`/Kanbas/Courses/${course.number}`}
