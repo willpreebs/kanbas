@@ -86,14 +86,21 @@ function Kanbas() {
                 />
               }
             />
-            <Route path="Courses" element={<h1>Courses</h1>}>
+            <Route path="Courses" element={<Dashboard
+                              courses={courses}
+                              setCourses={setCourses}
+                              course={course}
+                              setCourse={setCourse}
+                              addCourse={addCourse}
+                              deleteCourse={deleteCourse}
+                              updateCourse={updateCourse}/>}>
 
             </Route>
             <Route
               path="Courses/:courseId/*"
               element={<Courses courses={courses} />}
             />
-            <Route path="Calendar" element={<h1>Calendar</h1>} />
+            <Route path="Calendar" element={<h1 className="page-col page-left-margin">Calendar</h1>} />
             <Route path="admin/users" element={<UserTable/>} />
           </Routes>
         </div>
